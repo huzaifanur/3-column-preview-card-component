@@ -43,7 +43,7 @@ body .flex-container .box {
   min-height: 500px;
   max-height: 500px;
   min-width: 150px;
-  max-width: 350px;
+  max-width: 300px;
 }
 body .flex-container .box .car-icon {
   height: 6rem;
