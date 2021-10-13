@@ -31,8 +31,6 @@ body {
 }
 body .flex-container {
   display: flex;
-  margin: 20px 10px;
-  overflow: auto;
   border-radius: 10px;
 }
 body .flex-container .box {
@@ -43,7 +41,7 @@ body .flex-container .box {
   min-height: 480px;
   max-height: 480px;
   min-width: 150px;
-  max-width: 411px;
+  max-width: 350px;
 }
 body .flex-container .box .car-icon {
   height: 6rem;
@@ -63,7 +61,6 @@ body .flex-container .box .card-desc {
 body .flex-container .box .card-cta {
   min-width: 20rem;
   font-family: var(--ff-Deca);
-  color: var(--bright-orange);
   font-size: 2rem;
   padding: 2rem 3rem;
   border-radius: 40px;
@@ -79,16 +76,26 @@ body .flex-container .box .card-cta:hover {
 body .flex-container .box-1 {
   background: var(--bright-orange);
 }
+body .flex-container .box-1 .card-cta {
+  color: var(--bright-orange);
+}
 body .flex-container .box-2 {
   background: var(--cyan);
+}
+body .flex-container .box-2 .card-cta {
+  color: var(--cyan);
 }
 body .flex-container .box-3 {
   background: var(--dark-cyan);
 }
+body .flex-container .box-3 .card-cta {
+  color: var(--dark-cyan);
+}
 
-@media (max-width: 600px) {
+@media (max-width: 1050px) {
   .flex-container {
     flex-direction: column;
+    overflow: auto;
   }
 }
 

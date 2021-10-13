@@ -31,8 +31,7 @@ body {
   width: 100vw;
   .flex-container {
     display: flex;
-    margin: 20px 10px;
-    overflow: auto;
+    // margin: 20px 10px;
     border-radius: 10px;
     .box {
       color: var(--transparent-white-paragraphs);
@@ -42,7 +41,7 @@ body {
       min-height: 480px;
       max-height: 480px;
       min-width: 150px;
-      max-width: 411px;
+      max-width: 350px;
       .car-icon {
         height: 6rem;
         margin-bottom: 3rem;
@@ -61,7 +60,6 @@ body {
       .card-cta {
         min-width: 20rem;
         font-family: var(--ff-Deca);
-        color: var(--bright-orange);
         font-size: 2rem;
         padding: 2rem 3rem;
         border-radius: 40px;
@@ -77,18 +75,28 @@ body {
     }
     .box-1 {
       background: var(--bright-orange);
+      .card-cta {
+        color: var(--bright-orange);
+      }
     }
     .box-2 {
       background: var(--cyan);
+      .card-cta {
+        color: var(--cyan);
+      }
     }
     .box-3 {
       background: var(--dark-cyan);
+      .card-cta {
+        color: var(--dark-cyan);
+      }
     }
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1050px) {
   .flex-container {
     flex-direction: column;
+    overflow: auto;
   }
 }
