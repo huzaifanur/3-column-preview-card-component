@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --ff-Bigshoulder: "Big Shoulders Display", cursive;
+  --ff-Deca: "Lexend Deca", sans-serif;
+  --bright-orange: hsl(31, 77%, 52%);
+  --cyan: hsl(184, 100%, 22%);
+  --dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white-paragraphs: hsl(0, 0%, 100%, 0.75);
+  --gray-background: hsl(0, 0%, 95%);
+  --gray-headings: hsl(0, 0%, 95%);
+  --gray-buttons: hsl(0, 0%, 95%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+body {
+  background: var(--gray-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  .flex-container {
+    display: flex;
+    margin: 20px 10px;
+    overflow: auto;
+    border-radius: 10px;
+    .box {
+      color: var(--transparent-white-paragraphs);
+      font-weight: 400;
+      font-size: 1.5rem;
+      padding: 5rem;
+      min-height: 480px;
+      max-height: 480px;
+      min-width: 150px;
+      max-width: 411px;
+      .car-icon {
+        height: 6rem;
+        margin-bottom: 3rem;
+      }
+      .car-title {
+        font-family: var(--ff-Bigshoulder);
+        text-transform: uppercase;
+        font-size: 4rem;
+        margin-bottom: 3rem;
+      }
+      .card-desc {
+        font-family: var(--ff-Deca);
+        font-size: 1.6rem;
+        margin-bottom: 6rem;
+      }
+      .card-cta {
+        min-width: 20rem;
+        font-family: var(--ff-Deca);
+        color: var(--bright-orange);
+        font-size: 2rem;
+        padding: 2rem 3rem;
+        border-radius: 40px;
+        outline: none;
+        border: none;
+      }
+      .card-cta:hover {
+        cursor: pointer;
+        background-color: inherit;
+        color: inherit;
+        border: 1px solid;
+      }
+    }
+    .box-1 {
+      background: var(--bright-orange);
+    }
+    .box-2 {
+      background: var(--cyan);
+    }
+    .box-3 {
+      background: var(--dark-cyan);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
